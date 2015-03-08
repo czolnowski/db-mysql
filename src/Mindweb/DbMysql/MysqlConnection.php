@@ -7,14 +7,39 @@ use Mindweb\Config;
 
 class MysqlConnection extends Db\Connection
 {
-    public function __construct(Config\Configuration $configuration)
+    /**
+     * @var Config\Configuration
+     */
+    private $configuration;
+
+    /**
+     * @var string
+     */
+    private $configurationKey;
+
+    public function __construct(Config\Configuration $configuration, $configurationKey)
     {
-        parent::__construct(
-            'mysql',
-            DBAL\DriverManager::getConnection(
-                $configuration->get('db.mysql'),
-                new DBAL\Configuration()
-            )
+        if (!$configurationKey) {
+            throw new Exception\MysqlConfigurationAdapterIsNotDefinedException();
+        }
+
+        $this->configuration = $configuration;
+        $this->configurationKey = $configurationKey;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return 'mysql';
+    }
+
+    protected function initialize()
+    {
+        return DBAL\DriverManager::getConnection(
+            $this->configuration->get($this->configurationKey),
+            new DBAL\Configuration()
         );
     }
-} 
+}

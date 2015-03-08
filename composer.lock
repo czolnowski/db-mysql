@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "555def948d7ae5ca96d8bdb849dcb39b",
+    "hash": "5266aacc1c819680714751f8a7e612ba",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -484,16 +484,16 @@
         },
         {
             "name": "mindweb/config",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/czolnowski/config.git",
-                "reference": "7376430c09dd359db61f8dc7e9c2204466cc0cfb"
+                "reference": "778c4a0ba47639091896b2ca099a14fe696c6dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/czolnowski/config/zipball/7376430c09dd359db61f8dc7e9c2204466cc0cfb",
-                "reference": "7376430c09dd359db61f8dc7e9c2204466cc0cfb",
+                "url": "https://api.github.com/repos/czolnowski/config/zipball/778c4a0ba47639091896b2ca099a14fe696c6dc0",
+                "reference": "778c4a0ba47639091896b2ca099a14fe696c6dc0",
                 "shasum": ""
             },
             "type": "library",
@@ -512,24 +512,24 @@
                     "email": "marcin@czolnowski.net"
                 }
             ],
-            "time": "2015-03-08 08:43:13"
+            "time": "2015-03-08 09:25:56"
         },
         {
             "name": "mindweb/db",
-            "version": "1.0.1",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/czolnowski/db.git",
-                "reference": "b5741928b6138e4461c872720e4e1657a596dcb7"
+                "reference": "f8b496220c8b881dd6dbde6ac362f40eee03383a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/czolnowski/db/zipball/b5741928b6138e4461c872720e4e1657a596dcb7",
-                "reference": "b5741928b6138e4461c872720e4e1657a596dcb7",
+                "url": "https://api.github.com/repos/czolnowski/db/zipball/f8b496220c8b881dd6dbde6ac362f40eee03383a",
+                "reference": "f8b496220c8b881dd6dbde6ac362f40eee03383a",
                 "shasum": ""
             },
             "require": {
-                "mindweb/config": "1.0.0"
+                "mindweb/config": "1.0.*"
             },
             "type": "library",
             "autoload": {
@@ -547,7 +547,7 @@
                     "email": "marcin@czolnowski.net"
                 }
             ],
-            "time": "2015-03-08 09:19:48"
+            "time": "2015-03-08 20:00:27"
         }
     ],
     "packages-dev": [],
