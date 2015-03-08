@@ -1,5 +1,5 @@
 <?php
-namespace Mindweb\Db;
+namespace Mindweb\DbMysql;
 
 use Doctrine\DBAL;
 use Mindweb\Db;
