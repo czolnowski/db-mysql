@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "mindweb/config": "1.0.0",
-        "mindweb/db": "1.0.1",
+        "mindweb/config": "1.0.*",
+        "mindweb/db": "1.0.*",
         "doctrine/dbal": "~2.2"
     },
     "autoload": {
